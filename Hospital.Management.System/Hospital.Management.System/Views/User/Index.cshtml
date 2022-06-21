@@ -1,0 +1,71 @@
+﻿
+@model List<Hospital.Management.System.Entities.Concrete.Entityy.Doctor>;
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | Dashboard</title>
+
+
+</head>
+
+<body>
+    <a asp-controller="Account" asp-action="Logout"> Logout </a>
+    <a asp-controller="User" asp-action="MyRezerv"> MyRezerv </a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    FirstName
+                </th>
+                <th>
+                    LastName
+                </th>
+                <th>
+                    Age
+                </th>
+                <th>
+                    Position
+                </th>
+                <th>
+                    Experience
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Age)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Position)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Experience)
+                    </td>
+                    <td>
+                        <a asp-action="Rezerv" asp-route-id="@item.Id">Rezerv Doctor</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+
+</html>
+
+
+

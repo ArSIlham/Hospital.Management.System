@@ -1,0 +1,214 @@
+﻿
+@model List<Hospital.Management.System.Entities.Concrete.Entityy.Doctor>;
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dore jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="~/font/iconsmind-s/css/iconsminds.css" />
+    <link rel="stylesheet" href="~/font/simple-line-icons/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="~/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/vendor/bootstrap.rtl.only.min.css" />
+    <link rel="stylesheet" href="~/css/vendor/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="~/css/vendor/select2.min.css" />
+    <link rel="stylesheet" href="~/css/vendor/select2-bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/vendor/jquery.contextMenu.min.css" />
+    <link rel="stylesheet" href="~/css/vendor/component-custom-switch.min.css" />
+    <link rel="stylesheet" href="~/css/main.css" />
+    <link href="~/css/dore.light.bluenavy.css" rel="stylesheet" />
+</head>
+
+<body id="app-container" class="menu-sub-hidden right-menu">
+    <nav class="navbar fixed-top">
+        <div class="d-flex align-items-center navbar-left">
+          
+
+     
+
+        </div>
+
+
+   
+
+
+            <div class="header-icons d-inline-block align-middle">
+  
+
+            <div class="user d-inline-block">
+              <a asp-controller="Account" asp-action="Logout">Logout</a>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="container-fluid">
+            <div class="row app-row">
+                <div class="col-12">
+                    <div class="mb-2">
+                        <h1>All Doctor</h1>
+                        <div class="top-right-button-container">
+                            <button type="button" class="btn btn-primary btn-lg top-right-button mr-1" data-toggle="modal" data-backdrop="static" data-target="#exampleModalRight">
+                                ADD
+                                NEW
+                                Doctor
+                            </button>
+
+                            <div class="modal fade modal-right" id="exampleModalRight" tabindex="-1" role="dialog" aria-labelledby="exampleModalRight" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Add New Doctor</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="post" asp-action="CreateAccount" asp-controller="Account" enctype="multipart/form-data">
+                                                <div class="form-group">
+                                                    <label>Username</label>
+                                                    <input type="text" id="Username" name="Username" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Password</label>
+                                                    <input type="password" id="Password" name="Password" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>FirstName</label>
+                                                    <input type="text" id="FirstName" name="FirstName" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>LastName</label>
+                                                    <input type="text" id="LastName" name="LastName" class="form-control" placeholder="">
+                                                    <input type="hidden" id="Role" name="Role" value="Doctor" class="form-control" placeholder="">
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Position</label>
+                                                    <input type="text" id="Position" name="Position" class="form-control" placeholder="">
+
+
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>Experience</label>
+                                                    <input type="text" id="Experience" name="Experience" class="form-control" placeholder="">
+
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Age</label>
+                                                    <input type="text" id="Age" name="Age" class="form-control" placeholder="">
+
+
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                                                    <input type="submit" value="Submit" class="btn btn-primary" />
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                       
+                        </div>
+
+
+                    </div>
+
+                    <div class="mb-2">
+                        <a class="btn pt-0 pl-0 d-inline-block d-md-none" data-toggle="collapse" href="#displayOptions" role="button" aria-expanded="true" aria-controls="displayOptions">
+                            Display Options
+                            <i class="simple-icon-arrow-down align-middle"></i>
+                        </a>
+                        <div class="collapse d-md-block" id="displayOptions">
+
+                        </div>
+                    </div>
+                    <div class="separator mb-5"></div>
+
+                    <div class="row">
+                        <div class="col-12 mb-4 data-table-rows data-tables-hide-filter">
+                            <table id="datatableRows" class="data-table responsive nowrap"
+                                   data-order="[[ 1, &quot;desc&quot; ]]">
+                                <thead>
+                                    <tr>
+                                        <th>FirstName</th>
+                                        <th>LastName</th>
+                                        <th>Position</th>
+                                        <th>Experience</th>
+                                        <th>Age</th>
+                                        <th>Delete</th>
+                                        <th>Edit</th>
+                                        <th class="empty">&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                    <tr>
+                                        <td>
+                                            <p class="list-item-heading">@item.FirstName</p>
+                                        </td>
+                                        <td>
+                                            <p class="text-muted">@item.LastName</p>
+                                        </td>
+                                        <td>
+                                            <p class="text-muted">@item.Position</p>
+                                        </td>
+                                        <td>
+                                            <p class="text-muted">@item.Experience</p>
+                                        </td>
+                                        <td>
+                                            <p class="text-muted">@item.Age</p>
+                                        </td>
+                                        <td>
+                                            <form method="get" asp-action="DeleteDoctur" asp-controller="Admin">
+                                                <input type="hidden" value="@item.Id" name="Id" id="Id" />
+                                                <input value="Delete" type="submit" />
+
+                                            </form>
+                                        </td>
+                                        <td>
+                                            <form method="get" asp-action="GetByIDDoctor" asp-controller="Admin">
+                                                <input type="hidden" value="@item.Id" name="Id" id="Id" />
+                                                <input type="submit" value="Edit" class="btn btn-primary"  />
+                                            </form>
+
+
+                                        </td>
+                                    </tr>
+                                    }
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="~/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="~/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="~/js/vendor/perfect-scrollbar.min.js"></script>
+    <script src="~/js/vendor/select2.full.js"></script>
+    <script src="~/js/vendor/mousetrap.min.js"></script>
+    <script src="~/js/vendor/jquery.contextMenu.min.js"></script>
+</body>
+
+</html>

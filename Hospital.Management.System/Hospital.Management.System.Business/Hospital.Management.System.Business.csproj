@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.19.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hospital.Management.System.Data\Hospital.Management.System.Data.csproj" />
+    <ProjectReference Include="..\Hospital.Management.System.Entities\Hospital.Management.System.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

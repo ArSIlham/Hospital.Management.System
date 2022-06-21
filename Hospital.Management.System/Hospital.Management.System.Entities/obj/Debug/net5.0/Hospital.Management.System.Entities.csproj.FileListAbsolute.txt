@@ -1,0 +1,12 @@
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Entities\bin\Debug\net5.0\Hospital.Management.System.Entities.deps.json
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Entities\bin\Debug\net5.0\Hospital.Management.System.Entities.dll
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Entities\bin\Debug\net5.0\ref\Hospital.Management.System.Entities.dll
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Entities\bin\Debug\net5.0\Hospital.Management.System.Entities.pdb
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Entities\obj\Debug\net5.0\Hospital.Management.System.Entities.csproj.AssemblyReference.cache
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Entities\obj\Debug\net5.0\Hospital.Management.System.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Entities\obj\Debug\net5.0\Hospital.Management.System.Entities.AssemblyInfoInputs.cache
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Entities\obj\Debug\net5.0\Hospital.Management.System.Entities.AssemblyInfo.cs
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Entities\obj\Debug\net5.0\Hospital.Management.System.Entities.csproj.CoreCompileInputs.cache
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Entities\obj\Debug\net5.0\Hospital.Management.System.Entities.dll
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Entities\obj\Debug\net5.0\ref\Hospital.Management.System.Entities.dll
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Entities\obj\Debug\net5.0\Hospital.Management.System.Entities.pdb

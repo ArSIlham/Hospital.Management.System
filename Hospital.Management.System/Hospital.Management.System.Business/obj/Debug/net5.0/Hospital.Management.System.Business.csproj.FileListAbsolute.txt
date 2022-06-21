@@ -1,0 +1,17 @@
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\bin\Debug\net5.0\Hospital.Management.System.Business.deps.json
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\bin\Debug\net5.0\Hospital.Management.System.Business.dll
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\bin\Debug\net5.0\ref\Hospital.Management.System.Business.dll
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\bin\Debug\net5.0\Hospital.Management.System.Business.pdb
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\bin\Debug\net5.0\Hospital.Management.System.Data.dll
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\bin\Debug\net5.0\Hospital.Management.System.Entities.dll
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\bin\Debug\net5.0\Hospital.Management.System.Data.pdb
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\bin\Debug\net5.0\Hospital.Management.System.Entities.pdb
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\obj\Debug\net5.0\Hospital.Management.System.Business.csproj.AssemblyReference.cache
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\obj\Debug\net5.0\Hospital.Management.System.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\obj\Debug\net5.0\Hospital.Management.System.Business.AssemblyInfoInputs.cache
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\obj\Debug\net5.0\Hospital.Management.System.Business.AssemblyInfo.cs
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\obj\Debug\net5.0\Hospital.Management.System.Business.csproj.CoreCompileInputs.cache
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\obj\Debug\net5.0\Hospital.Management.System.Business.csproj.CopyComplete
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\obj\Debug\net5.0\Hospital.Management.System.Business.dll
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\obj\Debug\net5.0\ref\Hospital.Management.System.Business.dll
+C:\Users\ArS\source\repos\Hospital.Management.System\Hospital.Management.System.Business\obj\Debug\net5.0\Hospital.Management.System.Business.pdb
